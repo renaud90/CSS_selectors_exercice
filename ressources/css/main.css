@@ -1,0 +1,160 @@
+/* Divers */
+body {
+    background-image: url("../Images/fond.jpeg");
+    background-size: 25%;
+}
+
+/* Entête avec menu */
+#section-aide{
+    display: none;
+}
+
+#aide-icon:hover > #section-aide{
+    display: block;
+    position:fixed;
+    width:50%;
+    height:50%;
+    top:25%;
+    left:25%;
+    background-color: khaki;
+    padding:30px;
+    opacity: 95%;
+    border:2px solid blueviolet;
+    font-family: 'Courier New';
+    font-size:1rem;
+    text-transform: initial;
+}
+
+header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    background-color:khaki;
+    border-top:3px solid blueviolet;
+    border-bottom:6px solid blueviolet;
+}
+
+header > img {
+    float:left;
+    width:150px;
+}
+
+#menu{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#menu > ul{
+    display:inline-block;
+    list-style:none;
+    margin-left:5px;
+    margin-top:5px;
+    width:65%;
+}
+
+#menu > ul > li{
+    display:inline-block;
+    height:40px;
+    margin:20px;
+}
+
+li > a{
+    text-decoration: none;
+    color:black;
+    padding:20px;
+}
+
+ul > li > a:hover, #aide-icon:hover{
+    border:2px solid brown;
+    box-shadow: 5px 5px 30px;
+}
+
+#aide-icon, #menu > ul > li{
+    font-family: 'Georgia', 'Times New Roman';
+    text-transform: uppercase;
+    font-size:2em;
+}
+
+#aide-icon{
+    float:right;
+    padding:5px;
+    margin:30px;
+    width:50px;
+}
+
+
+
+/* Contenu principal */
+#contenu-principal{
+    margin-top:130px;
+    padding:50px;
+}
+
+#contenu-principal > p {
+    font-size:22px;
+}
+
+#contenu-principal > h1 {
+    margin-left:320px;
+    background-color:khaki;
+    border:2px solid violet;
+    color:brown;
+    position:sticky;
+    top:121px;
+}
+
+h1 + img + p::first-letter{
+    font-size:2em;
+    color:brown;
+    margin-right:5px;
+}
+
+h1 + img{
+    float:left;
+    height:100px;
+    margin:15px;
+    border:1px solid black;
+    outline:5px dashed brown;
+}
+
+
+/* Boite aparté avec les listes */
+aside{
+    float:left;
+    width:25%;
+    left:0px;
+    width:250px;
+    height:800px;
+    background-color: brown;
+    border-radius:20px;
+    padding:10px;
+    color:white;
+    border:3px solid gray;
+    margin:20px;
+}
+
+ol > li:first-child >h3{
+    color:khaki;
+}
+
+li > ul > :first-child{
+    color:khaki;
+}
+
+li > ul > li:hover, li > ul > ol:hover{
+    color:lightgray;
+    text-decoration: underline;
+    text-shadow: 1px 1px 20px orange;
+}
+
+
+
+
+/* Pied de page */
+footer{
+    background-color: khaki;
+    width:100%;
+    padding:5px;
+    position:sticky;
+    bottom:0px;
+}
